@@ -1,0 +1,220 @@
+.card-background-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: inherit;
+  height: inherit;
+}
+.card-info {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 33vh;
+  bottom: 0;
+}
+.card-info-button-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  float: left;
+}
+.card-info-text-right {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 85%;
+  height: 100vh;
+  text-align: right;
+  padding: 2%;
+  font-size: 13pt;
+}
+
+.card-info-button-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  margin-left: 85%;
+}
+.card-info-text-left {
+  position: absolute;
+  top: 0;
+  width: 85%;
+  height: 100vh;
+  text-align: left;
+  padding: 2%;
+  font-size: 100%;
+  float: left;
+}
+
+.btn-explore {
+  color: #fff;
+  background-color: #F8961E;
+  width: 120px;
+  font-size: 13pt;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
+
+#table-cover tr, #table-cover td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.div1 {
+  animation-name: animationDiv1;
+  animation-duration: 1s;
+  position: relative; /* Menggunakan posisi relatif untuk mempengaruhi div lain */
+  z-index: 1; /* Memberikan z-index yang lebih rendah agar div ini berada di belakang */
+  background-image: url('/img/home.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  filter: brightness(0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes animationDiv1 {
+  from {
+    filter: brightness(1);
+  }
+
+  to {
+    filter: brightness(0.5);
+  }
+}
+
+@keyframes animationHr {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.div-hr-1 {
+  animation-name: animationHr1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  width: 70vw;
+  height: 4px;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  position: absolute;
+}
+
+@keyframes animationHr1 {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+.div-hr-2 {
+  animation-name: animationHr2;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  width: 70vw;
+  height: 4px;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  position: absolute;
+}
+
+@keyframes animationHr2 {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+
+.div2 {
+  animation-name: animationDiv2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: absolute; /* Menggunakan posisi absolut untuk menimpa div lain */
+  z-index: 2; /* Memberikan z-index yang lebih tinggi agar div ini berada di depan */
+  width: 70vw;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  text-align: center;
+}
+
+@keyframes animationDiv2 {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+.div-middle {
+  animation-name: animationImg;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  background-color: transparent;
+  width: 100%;
+}
+
+@keyframes animationImg {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.btn-tour {
+  margin-top: 10%;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  width: 20%;
+  height: 12%;
+  border: 2px #fff solid;
+  border-radius: 15px;
+  font-family: "Waukegan LDO";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.btn-tour:hover {
+  background-color: #f3c300;
+  color: #000;
+}
