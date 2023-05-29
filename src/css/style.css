@@ -46,10 +46,10 @@ color: #fff;
 * --------------------------------------- */
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span{
-background: white;
+  background: #fff;
 }
 #fp-nav a:hover {
-color: #333;
+  color: #333;
 }
 
 @media screen and (max-width: 600px) {
