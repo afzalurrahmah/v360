@@ -60,6 +60,12 @@ color: #fff;
     font-size: 0.7em;
     text-align: justify;
   }
+  .div-hr-1 {
+    margin-top: 75px;
+  }
+  .div-hr-2 {
+    margin-top: 20px;
+  }
 }
 
 .div1 {
@@ -190,7 +196,7 @@ color: #fff;
   margin-top: 10%;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
-  width: 20%;
+  width: 180px;
   height: 12%;
   border: 2px #fff solid;
   border-radius: 15px;
